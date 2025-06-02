@@ -31,12 +31,12 @@ const page = () => {
             </div>
             <div className='w-full h-[50vh] bg-blue-400'></div>
             <div className='grid grid-cols-6 gap-8 p-[20px] bg-black'>
-              
-                    {Img.length > 0
-                        ? Img.map((image, index) => <Mcard key={index} imageUrl={image} />)
-                        : <p>Loading...</p>}
-                    <div className='text-white'>show all</div>
-               
+
+                {Img.length > 0
+                    ? Img.slice(0, 9).map((image, index) => <Mcard key={index} imageUrl={image} />)
+                    : <p>Loading...</p>}
+                <div className='text-white'>show all</div>
+
             </div>
 
         </div>

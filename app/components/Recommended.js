@@ -32,7 +32,7 @@ const Recommended = () => {
                 </div>
                 <div className="py-2 px-20 flex items-center overflow-scroll no-scrollbar gap-2.5">
                     {Img.length > 0
-                        ? Img.map((image, index) => <Mcard key={index} imageUrl={image} />)
+                        ? Img.slice(5,14).map((image, index) => <Mcard key={index} imageUrl={image} />)
                         : <p>Loading...</p>}
                     <div className='text-white'>show all</div>
                 </div>
