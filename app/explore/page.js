@@ -3,7 +3,7 @@ import React from 'react'
 import Mcard from '../components/mcard'
 import { useState, useEffect } from 'react'
 
-const page = () => {
+const Page = () => {
 
     const [Img, setImg] = useState([])
 
@@ -43,4 +43,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
